@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF=8">
-        <meta name=""viewport content=""width=device-width, initial-scale="1.0">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
         <title>PetFax || Add a pet for faxing</title>
     </head>
     <body>
@@ -11,7 +12,7 @@
             <div class="callout">
                 If you have an animal you want to fax put its info here
             </div>
-            <div class="fact-container">
+            <div class="facts-container">
                 <form>
                     <label for="submitter">
                         <h2>Name:</h2>

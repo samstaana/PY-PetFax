@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF=8">
-        <meta name=""viewport content=""width=device-width, initial-scale="1.0">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
         <title>PetFax || {{ pet.pet_name }}</title>
     </head>
     <body>
@@ -15,7 +16,7 @@
                 <br>
                 {{ pet.pet_fact }}
             </div>
-            <div class="pet-container">
+            <div class="pets-container">
                 <diw class="show-pet">
                     <img src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }}">
                 </diw>

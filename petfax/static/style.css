@@ -52,6 +52,7 @@ a {
 /* PETS */ 
 .pets-container {
     width: 100%;
+    border-radius: 1em;
     display: flex;
     flex-wrap: wrap;
     margin: 1em 0;
