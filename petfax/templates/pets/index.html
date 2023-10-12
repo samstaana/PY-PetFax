@@ -8,8 +8,19 @@
     <body>
         <h1>Welcome to PetFax</h1>
         {% for pet in pets %}
-            <h2>{{ pet.pet_name }}</h2>
-            <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
+            <div class="container">
+                <div class="pet-container">
+                    <h2>{{ pet.pet_name }}</h2>
+                    <img src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }}"/>
+                    <a href="/pets/{{pet.pet_id}}">Learn more...</a>
+                </div>
+            </div>
         {% endfor %}
+        <div class="container">
+            <div class="callout">
+                We would love to fax more pets - tell us which pets to fax 
+                <a href="/facts/new">here</a>
+            </div>
+        </div>
     </body>
 </html>
